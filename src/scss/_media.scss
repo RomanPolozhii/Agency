@@ -1,3 +1,12 @@
+@media (max-width: 1150px) {
+  .features__body {
+    display: block;
+  }
+  .item__features{
+      margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   body.lock {
     overflow: hidden;
