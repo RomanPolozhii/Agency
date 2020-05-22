@@ -2,8 +2,14 @@
   .features__body {
     display: block;
   }
-  .item__features{
-      margin-bottom: 30px;
+  .item__features {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 930px) {
+  .aplications__info {
+    padding: 50px 30px;
   }
 }
 
@@ -61,5 +67,16 @@
     p {
       font-size: 15px;
     }
+  }
+
+  .aplications__first {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .aplications__img {
+    min-height: 300px;
+  }
+  .aplications__second {
+    display: block;
   }
 }
