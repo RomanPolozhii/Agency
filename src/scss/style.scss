@@ -481,6 +481,134 @@
     }
   }
 }
+//Pricing =====================================================================================================
+.pricing {
+  padding: 100px 0 50px;
+  // .pricing__top
+
+  &__top {
+  }
+
+  // .pricing__title
+
+  &__title {
+  }
+
+  // .pricing__subtitle
+
+  &__subtitle {
+  }
+
+  // .pricing__body
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -17px;
+  }
+
+  // .pricing__column
+
+  &__column {
+    flex: 1 1 25%;
+    padding: 0 17px;
+  }
+
+  // .pricing__item
+
+  &__item {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    text-align: center;
+    margin-bottom: 30px;
+    &:hover {
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  // .pricing__best
+
+  .pricing-best {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .pricing__item.pricing-best:hover{
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  // .pricing__header
+
+  &__header {
+    position: relative;
+    padding: 20px 0;
+    background: #5c6d7f;
+    overflow: hidden;
+    h4 {
+      color: white;
+    }
+    p {
+      font-size: 40px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 45px;
+    }
+    .best-price{
+      position: absolute;
+      top: 22px;
+      right: -28px;
+      background: #f00;
+      color: #fff;
+      padding: 0px 25px;
+      font-size: 15px;
+      border-radius: 5px 0 0 5px;
+      transform: rotate(45deg);
+      
+    }
+  }
+
+  // .pricing__text
+
+  &__text {
+    position: relative;
+    padding: 20px 0;
+    color: #777;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      width: 40%;
+      height: 1px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // .pricing__link
+
+  &__link {
+    display: inline-block;
+    min-height: 48px;
+    padding: 0 25px;
+    line-height: 48px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 25px 0;
+    background: #5c6d7f;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}
+.container {
+}
+.title {
+}
 
 //-----------------------------------------------------------------------------------------------------------
 //

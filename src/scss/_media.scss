@@ -11,6 +11,9 @@
   .aplications__info {
     padding: 50px 30px;
   }
+  .pricing__column{
+    flex: 1 1 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -78,5 +81,11 @@
   }
   .aplications__second {
     display: block;
+  }
+}
+
+@media (max-width: 570px){
+  .pricing__column{
+    flex: 1 1 100%;
   }
 }
