@@ -484,20 +484,6 @@
 //Pricing =====================================================================================================
 .pricing {
   padding: 100px 0 50px;
-  // .pricing__top
-
-  &__top {
-  }
-
-  // .pricing__title
-
-  &__title {
-  }
-
-  // .pricing__subtitle
-
-  &__subtitle {
-  }
 
   // .pricing__body
 
@@ -534,7 +520,7 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   }
 
-  .pricing__item.pricing-best:hover{
+  .pricing__item.pricing-best:hover {
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
   }
 
@@ -554,7 +540,7 @@
       color: #fff;
       line-height: 45px;
     }
-    .best-price{
+    .best-price {
       position: absolute;
       top: 22px;
       right: -28px;
@@ -564,7 +550,6 @@
       font-size: 15px;
       border-radius: 5px 0 0 5px;
       transform: rotate(45deg);
-      
     }
   }
 
@@ -605,9 +590,117 @@
     cursor: pointer;
   }
 }
-.container {
+
+//Subscribe =====================================================================================================
+.subscribe {
+  // .subscribe__bg
+
+  &__bg {
+    min-height: 600px;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  // .subscribe__content
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  // .subscribe__header
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  // .subscribe__titlle
+
+  &__titlle {
+  }
+
+  // .subscribe__subtitle
+
+  &__subtitle {
+  }
+
+  // .subscribe__form
+
+  &__form {
+    position: relative;
+    max-width: 535px;
+    margin: 0 auto;
+    input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      max-width: 100%;
+      padding: 12px 156px 12px 14px;
+      border: 0;
+      height: 45px;
+      font-size: 14px;
+      color: white;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 142px;
+      height: 100%;
+      color: #fff;
+      background-color: #51bd55;
+      border: none;
+      transition: all 0.3s;
+      &::after {
+        content: "\f1d8";
+        font-family: "icomoon";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 18px;
+        color: #fff;
+        opacity: 0;
+      }
+      &:hover {
+        background-color: #4caf50;
+        font-size: 0;
+      }
+      &:hover::after {
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+.ibg {
 }
 .title {
+}
+.title-white {
 }
 
 //-----------------------------------------------------------------------------------------------------------

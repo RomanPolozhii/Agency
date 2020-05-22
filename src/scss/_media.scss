@@ -11,7 +11,7 @@
   .aplications__info {
     padding: 50px 30px;
   }
-  .pricing__column{
+  .pricing__column {
     flex: 1 1 50%;
   }
 }
@@ -84,8 +84,20 @@
   }
 }
 
-@media (max-width: 570px){
-  .pricing__column{
+@media (max-width: 570px) {
+  .pricing__column {
     flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .subscribe__form {
+    input {
+      padding: 12px 14px;
+    }
+    button {
+      top: 125%;
+      width: 100%;
+    }
   }
 }
