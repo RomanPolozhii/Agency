@@ -234,13 +234,13 @@
   }
   @keyframes down {
     0% {
-      bottom: 50px;
+      bottom:100px;
     }
     50% {
-      bottom: 30px;
+      bottom: 80px;
     }
     100% {
-      bottom: 50px;
+      bottom: 100px;
     }
   }
 }
@@ -509,6 +509,7 @@
     transition: box-shadow 0.3s;
     text-align: center;
     margin-bottom: 30px;
+    overflow: hidden;
     &:hover {
       box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
     }
@@ -696,11 +697,66 @@
     }
   }
 }
-.ibg {
-}
-.title {
-}
-.title-white {
+
+//Clients =====================================================================================================
+.clients {
+  padding: 120px 0;
+
+  // .clients__body
+
+  &__body {
+    position: relative;
+  }
+  .slick-list {
+    overflow: hidden;
+    text-align: center;
+  }
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 33%;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    transition: all 0.15s;
+    cursor: pointer;
+    &:hover {
+      background: #fafafa;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #121212;
+      line-height: 48px;
+      font-size: 30px;
+      font-family: "icomoon";
+    }
+  }
+
+  .slick-prev {
+    left: -35px;
+    &::before {
+      content: "\f104";
+    }
+  }
+
+  .slick-next {
+    right: -35px;
+    &::before {
+      content: "\f105";
+      left: 55%;
+    }
+  }
 }
 
 //-----------------------------------------------------------------------------------------------------------

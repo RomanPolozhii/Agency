@@ -1,3 +1,14 @@
+@media (max-width: 1300px) {
+  .clients .slick-prev {
+    left: -24px;
+  }
+  .clients .slick-next {
+    right: -23px;
+  }
+  .clients__slider{
+  }
+}
+
 @media (max-width: 1150px) {
   .features__body {
     display: block;
@@ -15,6 +26,7 @@
     flex: 1 1 50%;
   }
 }
+
 
 @media (max-width: 768px) {
   body.lock {
