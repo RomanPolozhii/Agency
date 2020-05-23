@@ -34,6 +34,8 @@ $text: #555;
 }
 
 .title-white{
+  position: relative;
+  z-index: 2;
   h3{
     color: white;
     &::after{

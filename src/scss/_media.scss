@@ -5,7 +5,7 @@
   .clients .slick-next {
     right: -23px;
   }
-  .clients__slider{
+  .clients__slider {
   }
 }
 
@@ -26,7 +26,6 @@
     flex: 1 1 50%;
   }
 }
-
 
 @media (max-width: 768px) {
   body.lock {
@@ -94,6 +93,10 @@
   .aplications__second {
     display: block;
   }
+
+  .about__column {
+    flex: 1 1 50%;
+  }
 }
 
 @media (max-width: 570px) {
@@ -111,5 +114,8 @@
       top: 125%;
       width: 100%;
     }
+  }
+  .about__column {
+    flex: 1 1 100%;
   }
 }
