@@ -97,10 +97,21 @@
   .about__column {
     flex: 1 1 50%;
   }
+
+  .gallery__column{
+    flex: 1 1 50%;
+  }
+  .gallery__content{
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 570px) {
   .pricing__column {
+    flex: 1 1 100%;
+  }
+  .gallery__column{
     flex: 1 1 100%;
   }
 }
