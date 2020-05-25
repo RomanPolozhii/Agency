@@ -827,7 +827,7 @@
 }
 //Gallery =====================================================================================================
 .gallery {
-  padding: 100px 0;
+  padding-top: 100px;
 
   // .gallery__body
 
@@ -908,7 +908,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
 
   // .team__item
 
@@ -1014,6 +1013,45 @@
   .icon-skype:hover {
     background: #00aff1;
     border: 2px solid #00aff1;
+  }
+}
+//Video =====================================================================================================
+.video {
+  // .video__bg
+
+  &__bg {
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+  }
+  .container {
+    padding: 140px 0 160px;
+  }
+
+  // .video__link
+
+  &__link {
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: #5c6d7f;
+    border: 5px solid #5c6d7f;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px #ccc;
+    transition: all 0.3s;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+    }
+    &:hover {
+      background: transparent;
+    }
   }
 }
 
