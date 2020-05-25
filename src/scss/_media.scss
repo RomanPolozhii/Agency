@@ -118,6 +118,9 @@
     opacity: 1;
     visibility: visible;
   }
+  .promo__link{
+    width: 34%;
+  }
  
 }
 
@@ -130,6 +133,9 @@
   }
   .team__item{
     flex: 1 1 100%;
+  }
+  .promo__link{
+    width: 46%;
   }
 }
 
@@ -145,5 +151,11 @@
   }
   .about__column {
     flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 370px){
+  .promo__link{
+    width: 72%;
   }
 }
