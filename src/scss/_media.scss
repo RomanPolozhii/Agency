@@ -16,6 +16,9 @@
   .item__features {
     margin-bottom: 30px;
   }
+  .team__item{
+    flex: 1 1 50%;
+  }
 }
 
 @media (max-width: 930px) {
@@ -112,6 +115,9 @@
     flex: 1 1 100%;
   }
   .gallery__column{
+    flex: 1 1 100%;
+  }
+  .team__item{
     flex: 1 1 100%;
   }
 }

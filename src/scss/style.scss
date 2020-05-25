@@ -828,20 +828,6 @@
 //Gallery =====================================================================================================
 .gallery {
   padding: 100px 0;
-  // .gallery__header
-
-  &__header {
-  }
-
-  // .gallery__title
-
-  &__title {
-  }
-
-  // .gallery__subtitle
-
-  &__subtitle {
-  }
 
   // .gallery__body
 
@@ -910,7 +896,126 @@
     font-size: 14px;
   }
 }
+//Team =====================================================================================================
+.team {
+  background-color: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  padding: 70px 0 30px;
+  // .team__body
 
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+  // .team__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1 1 25%;
+  }
+
+  // .team__img
+
+  &__img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    img {
+    }
+  }
+
+  // .team__info
+
+  &__info {
+    margin-top: 25px;
+    flex: 1 1 auto;
+  }
+
+  // .team__info-title
+
+  &__info-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  // .team__info-position
+
+  &__info-position {
+    margin-bottom: 15px;
+  }
+
+  // .team__info-text
+
+  &__info-text {
+    color: #999;
+    font-size: 14px;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  // .team__link
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #f0f0f0;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+    &:hover::before {
+      color: white;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #333;
+      transition: all 0.3s;
+    }
+  }
+  .icon-facebook:hover {
+    background: #3b5998;
+    border: 2px solid #3b5998;
+  }
+  .icon-twitter:hover {
+    background: #55acee;
+    border: 2px solid #55acee;
+  }
+  .icon-vk:hover {
+    background: #5080b8;
+    border: 2px solid #5080b8;
+  }
+  .icon-linkedin:hover {
+    background: #0077b5;
+    border: 2px solid #0077b5;
+  }
+
+  .icon-instagram:hover {
+    background: #44749c;
+    border: 2px solid #44749c;
+  }
+  .icon-youtube:hover {
+    background: #e52d27;
+    border: 2px solid #e52d27;
+  }
+  .icon-skype:hover {
+    background: #00aff1;
+    border: 2px solid #00aff1;
+  }
+}
 
 //-----------------------------------------------------------------------------------------------------------
 //
