@@ -22,9 +22,7 @@ $(function () {
   //Slider=====================================================
   $(".clients__slider").slick({
     slidesToShow: 4,
-    //slidesToScroll: 1,
-    //centerMode: true,
-    //arrows:true,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1130,
@@ -45,5 +43,9 @@ $(function () {
         }
       },
     ]
+  });
+  $('.reviews__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 });
