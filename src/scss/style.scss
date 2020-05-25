@@ -1369,11 +1369,6 @@
     justify-content: space-around;
   }
 
-  // .adrress__column
-
-  &__column {
-  }
-
   // .adrress__item
 
   &__item {
@@ -1426,15 +1421,73 @@
     display: block;
   }
 }
-.container {
+
+//Map =====================================================================================================
+.map .jstcache {
+  display: none;
 }
-.title {
+.gm-inset {
+  display: none;
 }
-.icon-map-marker {
-}
-.icon-phone {
-}
-.icon-envelope-o {
+//Footer =====================================================================================================
+.footer {
+  text-align: center;
+  padding: 100px 0;
+  span {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #f0f0f0;
+    border-radius: 50%;
+    transition: all 0.3s;
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover::before {
+      color: white;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #333;
+      transition: all 0.3s;
+    }
+  }
+  .icon-facebook:hover {
+    background: #3b5998;
+    border: 2px solid #3b5998;
+  }
+  .icon-twitter:hover {
+    background: #55acee;
+    border: 2px solid #55acee;
+  }
+  .icon-youtube:hover {
+    background: #e52d27;
+    border: 2px solid #e52d27;
+  }
+  .icon-skype:hover {
+    background: #00aff1;
+    border: 2px solid #00aff1;
+  }
+  .icon-instagram:hover {
+    background: #44749c;
+    border: 2px solid #44749c;
+  }
+  .icon-paper-plane:hover {
+    background: #34abe3;
+    border: 2px solid #34abe3;
+  }
+  .icon-linkedin:hover {
+    background: #0077b5;
+    border: 2px solid #0077b5;
+  }
+  .copyright{
+    margin-top: 15px;
+    font-size: 17px;
+  }
 }
 
 //-----------------------------------------------------------------------------------------------------------

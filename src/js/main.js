@@ -28,23 +28,23 @@ $(function () {
         breakpoint: 1130,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 800,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 620,
         settings: {
           slidesToShow: 1,
-        }
+        },
       },
-    ]
+    ],
   });
-  $('.reviews__slider').slick({
+  $(".reviews__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
   });
