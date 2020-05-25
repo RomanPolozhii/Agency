@@ -1352,13 +1352,89 @@
   // .form__mail
 
   &__mail {
-
   }
 
   // .form__message
 
   &__message {
   }
+}
+//Adrress =====================================================================================================
+.adrress {
+  padding: 150px 0 100px;
+  // .adrress__body
+
+  &__body {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .adrress__column
+
+  &__column {
+  }
+
+  // .adrress__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  // .adrress__img
+
+  &__img {
+    position: relative;
+    cursor: pointer;
+    &::before {
+      color: #5c6d7f;
+      font-size: 70px;
+      transition: text-shadow 0.5s;
+      text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s;
+    }
+    &:hover::before {
+      text-shadow: none;
+    }
+  }
+
+  // .adrress__info-title
+
+  &__info-title {
+    font-size: 20px;
+    color: black;
+    margin: 25px 0 15px;
+  }
+
+  // .adrress__info-contact
+
+  &__info-contact {
+    span {
+      display: block;
+    }
+  }
+
+  // .adrress__info-link
+
+  &__info-link {
+    font-size: 16px;
+    color: black;
+    display: block;
+  }
+}
+.container {
+}
+.title {
+}
+.icon-map-marker {
+}
+.icon-phone {
+}
+.icon-envelope-o {
 }
 
 //-----------------------------------------------------------------------------------------------------------
