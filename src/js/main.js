@@ -48,4 +48,28 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
   });
+  //Scroll navigation menu=====================================================
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+      $(".header").addClass("fixed");
+    } else if ($(this).scrollTop() < 20) {
+      $(".header").removeClass("fixed");
+    }
+  });
+  //Spincrement=====================================================
+  var show = true;
+  $(window).on("scroll", function () {
+    if (!show) return false;
+    var w_top = $(window).scrollTop();
+    var e_top = $(".about").offset().top;
+    console.log(w_top);
+    var w_height = $(window).height();
+    var d_height = $(document).height();
+    if (w_top + 200 >= e_top || w_height + w_top == d_height) {
+      $(".about__count").spincrement();
+      show = false;
+    }
+  });
 });
+//AOS Animation=====================================================
+AOS.init();

@@ -13,6 +13,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.5s;
+
   // .header__inner
 
   &__inner {
@@ -101,6 +103,18 @@
       opacity: 0;
       visibility: hidden;
     }
+  }
+}
+.header.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #5c6d7f;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  .header__inner{
+    height: 70px;
   }
 }
 
@@ -1484,7 +1498,7 @@
     background: #0077b5;
     border: 2px solid #0077b5;
   }
-  .copyright{
+  .copyright {
     margin-top: 15px;
     font-size: 17px;
   }
