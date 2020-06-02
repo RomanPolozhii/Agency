@@ -16,9 +16,15 @@ $(function () {
   //Burger=====================================================
   $(".header__burger").click(function () {
     $(".header__burger").toggleClass("active"),
-      $(".header__list ").toggleClass("active"),
+      $(".header__list").toggleClass("active"),
       $("body").toggleClass("lock");
   });
+
+  $(".header__link").click(function () {
+    $(".header__burger").removeClass("active"),
+    $(".header__list").removeClass("active")
+  });
+  
   //Anchors=====================================================
   $('a[href^="#"]').click(function () {
     var target = $(this).attr("href");
@@ -103,14 +109,19 @@ $(function () {
     }
   });
   //FancyBox=====================================================
-  $('.gallery__link').fancybox({
-    buttons : [ 
-      'slideShow',
-      'close'
-    ],
-    thumbs : {
-      autoStart : true
-    }
+  $('[data-fancybox="gallery"]').fancybox({
+    loop: true,
+    infobar: false,
+    smallBtn: true,
+    transitionEffect: "fade",
+    transitionDuration: 1000,
+  });
+
+  $('.video__link').fancybox({
+    infobar: false,
+    smallBtn: true,
+    transitionEffect: "fade",
+    transitionDuration: 1000,
   });
 });
 //AOS Animation=====================================================

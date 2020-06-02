@@ -263,21 +263,6 @@
 .features {
   padding: 70px 0;
 
-  // .features__header
-
-  &__header {
-  }
-
-  // .features__title
-
-  &__title {
-  }
-
-  // .features__subtitle
-
-  &__subtitle {
-  }
-
   // .features__body
 
   &__body {
@@ -290,11 +275,6 @@
 
   &__column {
     padding: 0 15px;
-  }
-
-  // .features__item
-
-  &__item {
   }
 }
 
@@ -644,16 +624,6 @@
     margin-bottom: 60px;
   }
 
-  // .subscribe__title
-
-  &__title {
-  }
-
-  // .subscribe__subtitle
-
-  &__subtitle {
-  }
-
   // .subscribe__form
 
   &__form {
@@ -911,6 +881,51 @@
     font-size: 14px;
   }
 }
+
+.fancybox-button {
+  background: transparent;
+  color: transparent;
+  &:hover {
+    color: transparent;
+  }
+}
+
+.fancybox-navigation .fancybox-button {
+  opacity: 1;
+  visibility: visible;
+  font-family: "icomoon";
+  font-size: 60px;
+}
+
+.fancybox-navigation .fancybox-button--arrow_right {
+  right: 8%;
+  &::before {
+    content: "\f105";
+    color: rgba($color: white, $alpha: 0.5);
+  }
+}
+.fancybox-navigation .fancybox-button--arrow_left {
+  left: 8%;
+  &::before {
+    content: "\f104";
+    color: rgba($color: white, $alpha: 0.5);
+  }
+}
+
+.fancybox-close-small {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px 2px;
+  right: -15px;
+  top: -16px;
+  opacity: 1;
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
 //Team =====================================================================================================
 .team {
   background-color: #fafafa;
@@ -941,8 +956,6 @@
     width: 230px;
     height: 230px;
     border-radius: 50%;
-    img {
-    }
   }
 
   // .team__info
@@ -1069,6 +1082,9 @@
       background: transparent;
     }
   }
+}
+.fancybox-navigation .fancybox-button {
+  opacity: 0;
 }
 //Reviews =====================================================================================================
 .reviews {
@@ -1225,20 +1241,6 @@
     z-index: 2;
     padding: 180px 0;
   }
-  // .promo__header
-
-  &__header {
-  }
-
-  // .promo__title
-
-  &__title {
-  }
-
-  // .promo__subtitle
-
-  &__subtitle {
-  }
 
   // .promo__link
 
@@ -1363,15 +1365,6 @@
     margin-right: 10px;
   }
 
-  // .form__mail
-
-  &__mail {
-  }
-
-  // .form__message
-
-  &__message {
-  }
 }
 //Adrress =====================================================================================================
 .adrress {
